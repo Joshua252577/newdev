@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: url( );
+}
+
+section {
+  margin: 10px  5px 2px 1px;
+  border: 1px solid #ff0036;
+  padding: 5px;
+  height: 50px;
+
+
+button {
+  color: #000cff;
+}
+
+#goiaba {
+  color: #ff0036;
+}
+
+.banana {
+  color: #e8ff00 !iportant;
+}
