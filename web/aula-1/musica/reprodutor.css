@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  border: 3px solid #546A7C;
+  width: 37.5rem;
+  height: 41.8rem;
+  display: flex;
+  flex-direction: flex;
+  align-items: flex-end;
+  background-image: url(https://i.pinimg.com/236x/35/1b/e4/351be438ed3b972631877a3e84829513--arctic-monkeys-lp.jpg );
+  object-fit: contain;
+}
+
+audio {
+  width: 100%;
+
+}

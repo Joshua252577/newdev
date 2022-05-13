@@ -1,0 +1,80 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Jura', sans-serifs;
+ 
+  ;
+}
+
+
+.container {
+  width: 60.0rem;
+  height: 62.9rem;
+  background-color: #2D3133;
+  
+}
+
+h1 {
+  width: 38.2rem;
+  height: 1.7rem;
+  margin-top: 2.1rem;
+  margin-left: 2.8rem;
+  color: white;
+
+  font-weight: 700;
+  font-family: 'Jura';
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+}
+
+.caixa-2 {
+  width: 54.9rem;
+  height: 28.1rem;
+
+  margin-top: 2.3rem;
+  margin-left: 2.8rem;
+  margin-right: 2.3rem;
+  margin-bottom: 3.5rem;
+
+  background-color: #C4C4C4;
+
+  background-image: url(https://i.pinimg.com/originals/4b/9d/7f/4b9d7f910e7592ba7db0dd2150a521a2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+p {
+  width: 54.0rem;
+  height: 12.0rem;
+  margin-left: 3.7rem;
+  margin-bottom: 5.6rem;
+
+  color: white;
+}
+
+button {
+  width: 16.0rem;
+  height: 5.0rem;
+  margin-left: 22.0rem;
+  padding: 1.6rem 3.4rem;
+
+  border-radius: 8.0rem;
+  background-color: #00856F;
+  color: white;
+
+  border: none;
+}
