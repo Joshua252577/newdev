@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  height: 10rem;
+}
+
+header,
+main,
+footer {
+  width: 80%;
+}
+
+header section:first-child {
+    width: 100%;
+    height: 3rem;
+    background-color: white;
+    border: 1px solid aqua;
+    color: red;
+}
+span {
+  color: #000
+}
+
+header section:last-child {
+  height: 7rem;
+  width: 100%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+main {
+  height: calc(100% - 20rem);
+  border: 1px solid red;
+  width: 10;
+}
+
+footer {
+  height: 10rem;
+  border: 1px solid blue;
+}
