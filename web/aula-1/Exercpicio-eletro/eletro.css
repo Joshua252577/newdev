@@ -31,14 +31,14 @@ footer {
 }
 
 header section:first-child {
-    width: 100%;
-    height: 3rem;
-    background-color: white;
-    border: 1px solid aqua;
-    color: red;
+  width: 100%;
+  height: 3rem;
+  background-color: white;
+  border: 1px solid aqua;
+  color: red;
 }
 span {
-  color: #000
+  color: #000;
 }
 
 header section:last-child {
@@ -55,8 +55,44 @@ main {
   height: calc(100% - 20rem);
   border: 1px solid red;
   width: 10;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
+.bebedouro {
+  width: 24.2rem;
+  height: 38.2rem;;
+  background-color: #c4c4c4;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  padding-top: 1.9rem;
+  padding-bottom: 15.5rem;
+}
+
+.geladeira {
+  width: 22.5rem;
+  height: 39.4rem;
+  background-color: #c4c4c4;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  padding-top: 1.9rem;
+  padding-bottom: 15.5rem;
+
+}
+.valorB {
+  background-color: white; 
+  padding-left: 1.4rem;
+  padding-bottom: 1.1rem;
+
+}
+
+.valorG {
+  background-color: white; 
+  padding-left: 1.4rem;
+  padding-bottom: 1.1rem;
+
+}
 footer {
   height: 10rem;
   border: 1px solid blue;
