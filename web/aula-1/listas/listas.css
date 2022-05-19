@@ -15,8 +15,12 @@ body {
 body {
   font-size: 1.6rem;
   font-family:  'DM Sans', sans-serif;
+  background-image: url(https://img.elo7.com.br/product/600x380/2A4CB3F/papel-de-parede-adesivo-pets-pet-shop-dog-cachorro-beer.jpg);
 }
 
+header, main, footer {
+  background-color: rgb(199, 199, 199);
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -37,8 +41,18 @@ header h3:hover{
 header, main, footer {
   width: 80%;
   margin: 0 auto;
-
+  
 }
+header ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+header ul li{
+  margin-inline: 2rem;
+}
+
 main {
   display: flex;
   padding: 3rem;
@@ -49,7 +63,6 @@ main section h1 {
 }
 
 main section p {
-  text-align: justify;
   line-height: 2.5rem;
 }
 
@@ -58,17 +71,7 @@ main sectio:first-child {
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  padding-inline: 2rem;
-}
-
-ul {
-  display: flex;
-  align-items: center;
-  list-style-type: none;
-}
-
-li{
-  margin-inline: 2rem;
+  padding-inline: 3rem;
 }
 
 a{
@@ -81,12 +84,59 @@ footer {
   align-items: center;
   padding: 4rem;
   flex-direction: column; 
+
 }
 
 .social i{
   margin-right: 1rem;
+  justify-content: center;
 }
 .social i:hover {
  color: red;
  cursor: pointer;
 }
+.social .fa-facebook:hover {
+  color: #296fb4;
+}
+.social .fa-twitter:hover {
+  color: #29a4d9  ;
+}
+
+.social a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.social, p, a:last-child{
+  padding: 1rem;
+}
+
+.botoes button{
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 3rem;
+  border: none;
+  color: #fff;
+  background-color: #dbbc51;
+  cursor: pointer;
+  border: 1px solid #997800;
+}
+
+.botoes button:hover {
+ color: white;
+ background-color: #d6a906;
+
+  }
+  .serviços{
+    width: 40rem;
+    background-color: rgba(255, 255, 255, 0.363);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .serviços ul {
+    list-style-type: none;
+  }
+  .serviços ul li {
+    margin-top: 1rem;
+  }
