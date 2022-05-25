@@ -21,7 +21,7 @@ body {
 header,
 main,
 footer {
-  background-color: rgb(199, 199, 199);
+  background-color: #c2a891
 }
 header {
   display: flex;
@@ -32,7 +32,7 @@ header {
 }
 
 header h3 {
-  color: brown;
+  color: rgb(253, 253, 253);
 }
 
 header h3:hover {
@@ -176,16 +176,54 @@ td {
   padding: 1rem;
 }
 /*CONTATO*/
-.contato section:first-child {
-width: 30rem;
-height: 50rem;
-background-color: rgba(255, 255, 255, 0.363);
-background-repeat: no-repeat;
+.main-contato div {
+  min-height: 50rem;
+  width: 50%;
 }
-.contato section i{
+.main-contato div:first-child {
+  background-image: url(https://images.pexels.com/photos/1573324/pexels-photo-1573324.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: cover;
 }
-.contato section h3 {
-  padding-top: 1rem;
-  justify-content: space-around;
+.main-contato div h3{
+  display: flex;
+  padding-top: 5rem;
+  justify-content: center;
+  color: rgb(255, 123, 0);
+}
+.main-contato div p{
+  display: flex;
+  justify-content: center;
+  color: #fff
+}
+.form-contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.form-contato h1 {
+  font-family: 'roboto';
+  margin-top: 3rem;
+  text-align: center;
+}
+.form-contato form {
+  display: grid;
+  margin-top: 6rem;
+}
+.form-contato button {
+  margin-top: 2rem;
+  border: 1px solid #d6a906;
+  background-color: #fff;
+  color: #d6a906;
+  border-radius: 5rem;
+  padding: 1rem;
+}
+.form-contato form input {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: 1px solid #dbbc51;
+}
+.form-contato form button:hover {
+  background-color: #dbbc51;
+  color: #fff;
 }
