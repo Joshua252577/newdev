@@ -1,127 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Jura:wght@400;700&family=Koulen&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Jura:wght@400;700&family=Koulen&display=swap" rel="stylesheet"/>
 
-  <script src="https://kit.fontawesome.com/6ccf7464d5.js" crossorigin="anonymous"></script>
-  <script src="main.js"></script>
-  <link rel="stylesheet" href="listas.css">
-  <title>contato</title>
-
-</head>
-<body>
-  <header>
-    <div>
-      <img src="assets/logo-Pet.png" alt="logo Pet" width="90">
-    </div>
+    <script>
+      src = 'https://kit.fontawesome.com/6ccf7464d5.js'
+      crossorigin = 'anonymous'
+    </script>
+    <link rel="stylesheet" href="listas.css" />
+    <title>contato</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="assets/logo-Pet.png" alt="logo Pet" width="90" />
+      </div>
 
       <ul>
-
-        <li> 
+        <li>
           <a href="index.html">
             <h3>Home</h3>
-          </a> 
+          </a>
         </li>
 
-        <li> 
+        <li>
           <a href="#">
             <h3>Contato</h3>
-          </a> 
+          </a>
         </li>
 
         <li>
           <a href="sobreNós.html">
-          <h3>Sobre nós</h3>
+            <h3>Sobre nós</h3>
           </a>
         </li>
-
       </ul>
+    </header>
 
-  </header>
+    <main class="main-contato">
+      <div>
+        <h3>
+          <i class="fa-solid fa-location-dot"></i>
+          Address
+        </h3>
+        <p>Rua do Jão</p>
+        <h3>
+          <i class="fa-solid fa-phone-flip"></i>
+          fone
+        </h3>
+        <p>(46)8002-8922</p>
+        <h3>
+          <i class="fa-solid fa-envelope"></i>
+          Email
+        </h3>
+        <p>petmarques@gmail.com</p>
+      </div>
+      <div class="form-contato">
+        <h1>Agende seu horario</h1>
 
-  <main class="main-contato">
-    <div>
-      <h3>
-      <i class="fa-solid fa-location-dot"></i>
-      Address
-      </h3>
-      <p>Rua do Jão</p>
-      <h3>
-        <i class="fa-solid fa-phone-flip"></i>
-        fone
-      </h3>
-      <p>(46)8002-8922</p>
-      <h3>
-        <i class="fa-solid fa-envelope"></i>
-        Email
-      </h3>
-      <p>
-        petmarques@gmail.com
-      </p>
+        <form id = "form-messages">
+          <label for="name"> Nome: </label>
+          <input
+            id="name"
+            type="text"
+            autocomplete="off"
+            placeholder="Ex:João"
+            required
+          />
 
-    </div>
-    <div class="form-contato">
-      <h1>Agende seu horario</h1>
+          <label for="email"> Email: </label>
+          <input id="Email" type="text" autocomplete="off" />
 
-      <form>
-        <label for="name">
-          Nome:
-        </label>
-        <input id="name" type="text" autocomplete="off" placeholder="Ex:João" required>
+          <label for="Password"> Menssagem: </label>
+          <input id="Menssagem" type="text" autocomplete="off" />
 
-        <label for="email">
-          Email:
-        </label>
-        <input id="Email" type="text" autocomplete="off">
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </main>
 
-        <label for="Password">
-          Menssagem:
-        </label>
-        <input id="Menssagem" type="text" autocomplete="off">
+    <footer>
+      <section class="social">
+        <a href="http://twitter.com/" target="_blank">
+          <i class="fa-brands fa-instagram fa-2x"></i>
+        </a>
 
-        <button type="submit">
-          Enviar
-        </button>
+        <a href="http://facebook.com/" target="_blank">
+          <i class="fa-brands fa-facebook fa-2x"></i>
+        </a>
 
-
-
-      </form>
-    </div>
-    
-  </main>
-  
-  <footer>
-    <section class="social">
-      <a href="http://twitter.com/" target="_blank" >
-        <i class="fa-brands fa-instagram fa-2x"></i>
-      </a>
-
-      <a href="http://facebook.com/" target="_blank">
-        <i class="fa-brands fa-facebook fa-2x"></i>
-      </a>
-
-      <a href="http://twitter.com/" target="_blank" >
-        <i class="fa-brands fa-twitter fa-2x"></i>
-      </a>
-
+        <a href="http://twitter.com/" target="_blank">
+          <i class="fa-brands fa-twitter fa-2x"></i>
+        </a>
       </section>
-    
-    <section>
-       <p>Toro Comercio Internacional Ltda - CNPJ 11.264.042/0001-56 - R. Platina, 275  - Tatuapé, São Paulo - SP, 03308-010
 
-       Copyright© 2018 - Toro Com. Intl. Ltda - Todos os direitos reservados
-      </p>
+      <section>
+        <p>
+          Toro Comercio Internacional Ltda - CNPJ 11.264.042/0001-56 - R.
+          Platina, 275 - Tatuapé, São Paulo - SP, 03308-010 Copyright© 2018 -
+          Toro Com. Intl. Ltda - Todos os direitos reservados
+        </p>
 
-       <a href="#">
-        <i class="fa-solid fa-angles-up fa-3x"></i>
-       </a>
-    </section>
-  </footer>
-</body>
+        <a href="#">
+          <i class="fa-solid fa-angles-up fa-3x"></i>
+        </a>
+      </section>
+    </footer>
+    <script src="main.js"></script>
+  </body>
 </html>
