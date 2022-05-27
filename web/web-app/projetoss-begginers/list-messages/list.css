@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+}
+:root {
+  --primary-color: rgb(42, 236, 123);
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: 'DM Sans', sans-serif;
+}
+h1 {
+  color: var(--primary-color);
+  text-align: center;
+}
+#form-message {
+  margin-top: 2rem;
+  margin: 0 auto;
+  width: 50%;
+  display: grid;
+}
+
+textarea {
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+input {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(187, 187, 187);
+}
+#addButton {
+  border: 1px solid #ccc;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: white;
+}
+#section-messages{
+  margin-top: 3rem;
+}
+#section-messages h2 {
+ margin: 0 auto;
+ text-align: center;
+
+}
