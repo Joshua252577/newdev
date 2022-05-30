@@ -13,7 +13,7 @@ function addMessege(event) {
   }
 
   if (!inputTo.value.length) {
-    alert('O remetente deve ser informado!')
+    alert('O destinatario deve ser informado!')
     return
   }
 
@@ -22,7 +22,7 @@ function addMessege(event) {
 
   console.log('aa', textArea.value)
   if (!textArea.value.length) {
-    alert('O remetente deve ser informado!')
+    alert('A mensagem deve ser escrita!')
     return
   }
   const message = {

@@ -51,5 +51,11 @@ input {
 #section-messages h2 {
  margin: 0 auto;
  text-align: center;
+}
+
+ul {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 2rem;
 
 }
