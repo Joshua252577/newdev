@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
 
+    
     <link rel="stylesheet" href="list.css" />
 
     <title>lista de Mensagens</title>
@@ -19,28 +20,43 @@
   <body>
     <main class="container">
       <h1>Adicionar mensagem</h1>
-
+      
       <form id="form-message">
         <label for="from">De:</label>
         <input id="from" type="text" />
-
+        
         <label for="to">Para:</label>
         <input id="to" type="text" />
-
+        
         <label for="message">Mensagem:</label>
-
+        
         <textarea id="massage" cols="50" rows="6"></textarea>
-
-        <button id="addButton">Adicionar </button>
+        
+        <button id="addButton">Adicionar</button>
       </form>
-
+      
       <section id="section-messages">
-        <h2>
-          Mensagens:
-        </h2>
+        <h2>Mensagens:</h2>
       </section>
+      
+      <table>
+        <thead>
+          <tr>
+            <th>De:</th>
+            <th>Para:</th>
+            <th>Mensagem:</th>
+            <th>Ações:</th>
+          </tr>
+        </thead>
+        
+        <tbody id="tbody-messages"></tbody>
+      </table>
+      <script
+        src="https://kit.fontawesome.com/6ccf7464d5.js"
+        crossorigin="anonymous"
+      ></script>
     </main>
-
+    
     <script src="main.js"></script>
   </body>
 </html>

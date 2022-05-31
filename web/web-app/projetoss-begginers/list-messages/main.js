@@ -1,3 +1,8 @@
+let countRow = 0
+const onClickEdit  (idRecord) {
+  console.log('Chamou a função editar');
+}
+{
 const buttonAddMassege = document.getElementById('addButton')
 
 function addMessege(event) {
@@ -30,7 +35,7 @@ function addMessege(event) {
     to: inputTo.value,
     message: textArea.value
   }
-  console.log('.', message)
+  /* console.log('.', message)
 
   const sessionMessages = document.getElementById('section-messages')
 
@@ -44,11 +49,59 @@ function addMessege(event) {
     sessionMessages.appendChild(ul)
   }
 
-  document.getElementById('form-message').reset()
-
+  
   const li = document.createElement('li')
   li.innerHTML = `De: ${message.from} Para: ${message.to} mensagem: ${message.message}`
+  
+  ul.appendChild(li) */
 
-  ul.appendChild(li)
+  document.getElementById('form-message').reset()
+
+  let tbody = document.getElementById('tbody-messages')
+
+  const tr = document.createElement('tr')
+
+  //primeira coluna
+  const tdFrom = document.createElement('td')
+  tdFrom.innerHTML = message.from
+
+  //segunda coluna
+  const tdTo = document.createElement('td')
+  tdTo.innerHTML = message.to
+
+  //terceira coluna
+  const tdMessage = document.createElement('td')
+  tdMessage.innerHTML = message.message
+
+  tr.appendChild(tdFrom)
+  tr.appendChild(tdTo)
+  tr.appendChild(tdMessage)
+
+
+  }
+
+  const iconEdit = document.createElement('i')
+  iconEdit.setAttribute('class', 'fa-edit')
+  iconEdit.setAttribute('style', 'cursor:pointer');
+  iconEdit.setAttribute('onclick', `onClickEdit();`)
+  tdButtons.appendChild(iconEdit)
+
+  
+  const iconRemove = document.createElement('td')
+  iconRemove = document.setAttribute('class', 'fas fa-trash');
+  iconRemove.setAttribute('style', 'cursor:pointer');
+  tdButtons.appendChild(iconRemove);
+  
+  tr.appendChild(tdButtons)
+  
+  // precisamos identificar a linha
+  tr.setAttribute('id', countRow)
+  countRow += 1
+
+  console.log('pegar elemento pai', tdButtons.parentElement.id)
+  
+  tr.appendChild(tdButtonEdit)
+  
+  tbody.appendChild(tr)
 }
 buttonAddMassege.addEventListener('click', addMessege)
