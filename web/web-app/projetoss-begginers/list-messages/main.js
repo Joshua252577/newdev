@@ -1,5 +1,6 @@
 let countRow = 0;
 let lineEditingInMoment = null;
+let indexRow;
 
 function onClickRemove(lineToRemove) {
   lineToRemove.remove();
@@ -17,6 +18,56 @@ function onClickEdit (lineEditing) {
 
   document.getElementById('message')
     .value = message.innerHTML;
+}
+
+function moveUp(row) {
+  const nodes = document.getElementById('tbody-messages').childNodes;
+
+  nodes.forEach((rowItem, index) => {
+    if (rowItem.id === row.id) {
+      indexRow = index - 1;
+    }
+  });
+        
+  moveLine('up');
+}
+
+function moveDown(row) {
+  const nodes = document.getElementById('tbody-messages').childNodes;
+
+  nodes.forEach((rowItem, index) => {
+    if (rowItem.id === row.id) {
+      indexRow = index - 1;
+    }
+  });
+
+  moveLine('down');
+}
+
+function moveLine(direction) {
+  const rows = document.getElementById('tbody-messages').rows;
+  
+  console.log('-> rows', rows);
+  console.log('indexRow', indexRow);
+  console.log('rows[indexRow]', rows[indexRow])
+  const parent = rows[indexRow].parentNode;
+
+  if (direction === 'up') {
+    if (indexRow >= 1) {
+      parent.insertBefore(rows[indexRow],rows[indexRow - 1]);
+
+      indexRow--;
+    }
+  }
+
+  if (direction === 'down') {
+    if(indexRow < rows.length){
+      if (rows[indexRow + 1]) {
+        parent.insertBefore(rows[indexRow + 1],rows[indexRow]);
+        indexRow++;
+      }
+    }
+  }
 }
 
 document.getElementById('addButton')
@@ -76,7 +127,7 @@ document.getElementById('addButton')
       iconEdit.setAttribute('title', 'Editar');
       iconEdit.setAttribute('style', 'cursor:pointer; margin-inline: 1rem;');
       tdButtons.appendChild(iconEdit)
-      
+
       
       const iconRemove = document.createElement('i');
       iconRemove.setAttribute('class', 'fas fa-trash');
@@ -104,6 +155,9 @@ document.getElementById('addButton')
       
       iconEdit.setAttribute('onclick', `onClickEdit(${tdButtons.parentElement.id});`);
       iconRemove.setAttribute('onclick', `onClickRemove(${tdButtons.parentElement.id});`)
+
+      iconArrowUp.setAttribute('onclick', `moveUp(${tdButtons.parentElement.id});`)
+      iconArrowDown.setAttribute('onclick', `moveDown(${tdButtons.parentElement.id});`)
 
       if (lineEditingInMoment) {
         const [fromToUpdate, toToUpdate, messageToUpdate] = 
