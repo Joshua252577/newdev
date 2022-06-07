@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 body {
-background-image: url(https://www.tce.sp.gov.br/sites/default/files/eventos/speed-motion-futuristic-red-background_23-2148400714.jpg) ;
+  background-image: url(https://www.tce.sp.gov.br/sites/default/files/eventos/speed-motion-futuristic-red-background_23-2148400714.jpg);
 }
 h1 {
   font-family: 'Bebas Neue', cursive;
@@ -19,3 +19,17 @@ h1 {
   border: 3px solid blueviolet;
 }
 
+div {
+  color: white;
+}
+
+table {
+  margin: 0 auto;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+}
