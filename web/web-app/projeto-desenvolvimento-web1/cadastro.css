@@ -1,35 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-body {
-  background-image: url(https://www.tce.sp.gov.br/sites/default/files/eventos/speed-motion-futuristic-red-background_23-2148400714.jpg);
-}
-h1 {
-  font-family: 'Bebas Neue', cursive;
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-  border: 3px solid red;
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#form-cadastro {
-  font-family: 'Bebas Neue', cursive;
-  margin-top: 42px;
+html, boyd {
+  height: 100%;
+}
+
+:root {
+  --primary-color: #BB2BFF;
+  --bg-color-primary: #BB2BFF;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+form {
+  display: grid;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 2rem;
+
+  border-radius: 2.0rem;
+  background-color: rgb(255, 0, 179);
+
+  font-family: 'Titan One', cursive;
+  
+}
+
+
+input{
+  border-radius: 1.5rem;
+  border: 1px solid blanchedalmond;;
+}
+ul,li {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  border: 3px solid blueviolet;
+  justify-content: center;
+  margin: auto;
+  margin-top: 2.0rem;
+}
+li{
+  border: 1px solid black;
 }
 
-div {
-  color: white;
-}
+button {
+  margin-top: 15px;
+  background-color:  var(--primary-color) ;
 
-table {
-  margin: 0 auto;
-}
+  border-radius: 1.5rem;
+  border: 1px solid blanchedalmond;
 
-table, th, td {
-  border: 1px solid #ccc;
-  padding: 0.5rem;
-  color: white;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Titan One', cursive;
+
 }

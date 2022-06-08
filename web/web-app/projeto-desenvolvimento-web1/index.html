@@ -1,70 +1,38 @@
 <!DOCTYPE html>
-<html lang="pr-BR">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="cadastro.css">
-  <title>Cadastro de usuário</title>
   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="cadastro.css">
+  
+  <title>List from array</title>
 </head>
-
 <body>
-  <header>
-    <div>
-      <h1> Formulário de Cadastro</h1>
-    </div>
-  </header>
+  <form>
+    <label for="name">Nome</label>
+    <input id="name" type="text">
 
-  <main>
-    <div>
-      <form id="form-cadastro">
-        <label for="name">Nome:</label>
-        <input id="name" type="text" autocomplete="off">
+    <label for="age">Idade</label>
+    <input id="age" type="number">
 
-        <label for="sobrenome">Sobrenome:</label>
-        <input id="sobrenome" type="text" autocomplete="off">
+    <label for="height">Altura</label>
+    <input id="height" type="text">
+    <button id="btn">
+      Adicionar
+    </button>
+  </form>
 
-        <label for="ddd">DDD:</label>
-        <input id="ddd" type="text" autocomplete="off">
-
-        <label for="fone">Telefone:</label>
-        <input id="fone" type="text"autocomplete ="off">
-
-        <label for="email">E-mail:</label>
-        <input id= "email" type="text" autocomplete="off">
-        
-        <label for="endereco">Endereço:</label>
-        <input id= "endereco" type="text" autocomplete="off">
-
-        <label for="complemento">Complemento:</label>
-        <input id= "complemento" type="text" autocomplete="off">
-
-        <button id="addButton">Enviar</button>
-
-    </div>
-
-  </main>
   <section id="list-section">
-    <table>
-      <thead>
-        <tr>
-          <th>Nome</th>
-          <th>Sobrenome</th>
-          <th>DDD</th>
-          <th>Telefone</th>
-          <th>E-mail</th>
-          <th>Endereço</th>
-          <th>Complemento</th>
-        </tr>
-      </thead>
+
   </section>
-
-  <footer>
-  </footer>
-  <script type="text/javascript" src="cadastro.js"></script>
+  
+  <script src="https://kit.fontawesome.com/d1a9aca78a.js" crossorigin="anonymous"></script>
+  <script src="cadastro.js"></script>
 </body>
-
 </html>

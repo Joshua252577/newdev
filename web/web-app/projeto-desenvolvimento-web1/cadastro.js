@@ -1,61 +1,69 @@
 let peoples = [];
 
-const addPeoples = (event) => {
-  event.preventDefault();
+const loadPeoples = () => {
+  const itemsJaArmazenados = localStorage.getItem('listaDePessoas');
+  return itemsJaArmazenados ? JSON.parse(itemsJaArmazenados) : [];
+}
+const span = () => {
+      const span = document.createElement('span')
+      const iconEdit = document.createElement('i')
+      iconEdit.setAttribute('class', 'fas fa-edit');
+      iconEdit.setAttribute('title', 'Editar');
+      iconEdit.setAttribute('style', 'cursor:pointer; margin-inline: 1rem;');
+      span.appendChild(iconEdit);
 
-  const people = {
+      const iconRemove = document.createElement('i');
+      iconRemove.setAttribute('class', 'fas fa-trash');
+      iconRemove.setAttribute('title', 'Remover');
+      iconRemove.setAttribute('style', 'cursor:pointer; margin-inline: 1rem;');
+      span.appendChild(iconRemove);
 
-    name: document.getElementById('name').value,
-    sobrenome: document.getElementById('sobrenome').value,
-    ddd: document.getElementById('ddd').value,
-    fone: document.getElementById('fone').value,
-    email: document.getElementById('email').value,
-    endereco: document.getElementById('endereco').value,
-    complemento: document.getElementById('complemento').value
+      return span;
+}
+const listPeoples = () => {
+  const peoples = loadPeoples();
+  
+  let ul = document.querySelector('ul');
+  if (ul) {
+    ul.remove();
   }
-
-  const itemsJaArmazenados = localStorage.getItem('diferente')
-
-  peoples.push(people);
-
-
-  localStorage.setItem('diferente', JSON.stringify(peoples));
-
-document.querySelector('form').reset();
-
-
-  const items = localStorage.getItem('diferente');
-  const itemsSerialized = JSON.stringify(items)
-
-  let ul  = document. querySelector ('ul')
-  if (!ul) {
-    ul = document.createElement('ul');
-  }
-
-  console.log('node list ul' + ul.childNodes);
-  itemsSerialized.forEach((item, index) => {
+  
+  ul = document.createElement('ul');
+ 
+  peoples.forEach((item, index) => {
     const li = document.createElement('li');
-    li.innerHTML = `Nome: ${item.name} Sobrenome: ${item.sobrenome} ddd: ${item.ddd} fone: ${item.fone} email: ${item.email} endereco: ${item.endereco} complemento: ${item.complemento}`;
-    console.log('ITEMS' + item)
+    li.innerHTML = `Nome: ${item.name} Idade: ${item.age}, Altura: ${item.height}`
+    console.log('ITEMS', item)
     ul.appendChild(li);
   });
-  
+
+
   document.getElementById('list-section').appendChild(ul);
-
-
- /* if (names.length) {
-    const ul = document.createElement('ul')
-
-    names.forEach(item => {
-      const li = document.createElement('li')
-      li.innerHTML = `${item.name} ${item.sobrenome} ${item.ddd} ${item.fone} ${item.email} ${item.endereco} ${item.complemento}`
-      ul.appendChild(li)
-    })
-
-    document.getElementById('list-section').appendChild(ul)
-  }
-}*/
-
-const botaoDeAdicionar = document.getElementById('addButton');
-botaoDeAdicionar.addEventListener('click', addNames);
 }
+
+listPeoples();
+
+const addPeople = (event) => {
+  event.preventDefault();
+  const people = {
+    name: document.getElementById('name').value,
+    age: document.getElementById('age').value,
+    height: document.getElementById('height').value,
+  }
+  
+  peoples = loadPeoples();
+
+  peoples.push(people);
+  
+  localStorage.setItem('listaDePessoas', JSON.stringify(peoples));
+
+  document.querySelector('form').reset();
+
+  listPeoples();
+}
+
+
+
+
+const botaoDeAdicionar = document.getElementById('btn');
+botaoDeAdicionar.addEventListener('click', addPeople)
