@@ -37,7 +37,15 @@ const onClickEdit = (element) => {
 }
 
 const onClickRemove = (element) => {
-  console.log('on click delete', element.getAttribute('identificador'));
+  const identificadorASerEncontrado = 
+  +element.getAttribute('identificador');
+
+  const pessoas = loadPeoples();
+
+  pessoas.splice(identificadorASerEncontrado, 1);
+  
+  localStorage.setItem('listaDePessoas', JSON.stringify(pessoas));
+  listPeoples();
 }
 
 const salvarRegistroEditado = (registroSendoEditado) => {
