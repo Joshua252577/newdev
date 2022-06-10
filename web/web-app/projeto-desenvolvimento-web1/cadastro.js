@@ -143,8 +143,13 @@ const addPeople = (event) => {
 
   document.querySelector('form').reset();
 
+
   listPeoples();
+
 }
+
+
+
 
 
 
