@@ -25,10 +25,8 @@ h1 {
 main {
   margin-top: 150px !important;
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 32px;
-  justify-content: space-around;
   border-end-end-radius: 200px;
   height: 400px;
   margin: 120px;
@@ -66,4 +64,11 @@ form {
   color: white;
   padding: 10px;
   border-radius: 20px;
+}
+#list-section ul {
+  font-family: 'Sarala', sans-serif;  
+display: flex;
+flex-direction: column;
+border: 1px solid black;
+list-style: none;
 }
