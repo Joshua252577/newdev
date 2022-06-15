@@ -35,7 +35,7 @@ const onClickEdit = element => {
   console.log('carro encontrado', carroEncontrado)
 }
 
-const salvarRegistroEditado = regisdtroSendoEditado => {
+const salvarRegistroEditado = regisdtroSendoEditado => {  
   const cars = carregarCarros()
   const carrosAtualizados = cars.map((car, index) => {
     if (identificadorQueTaSendoEditado === index) {
