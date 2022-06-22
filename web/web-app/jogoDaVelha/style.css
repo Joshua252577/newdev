@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#game {
+  width: 6.30rem;
+  height: 6.30rem;
+align-items: center;
+  border: 1px solid red
+}
+
+.linha {
+height: 6.30rem;
+border-bottom: 1px solid blue;
+}
