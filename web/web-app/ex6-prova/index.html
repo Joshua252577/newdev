@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/6ccf7464d5.js" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="style.css">
+  <title>lista de tarefas</title>
+</head>
+<body>
+  <main class="container">
+    <h1>Crie sua Lista de Tarefas</h1>
+
+    <form id="form-tarefas">
+
+      <label for="tarefa">Digite aquilo que precisa fazer:</label>
+      <textarea id="tarefa" name="" cols="30" rows="3"></textarea>
+      
+      <label for="data">data:</label>
+      <input id="data" type="date">
+
+      <button id="btn">Enviar</button>
+    </form>
+
+    <h2>Lista de Tarefas</h2>
+    <section id="section-tarefas"></section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>

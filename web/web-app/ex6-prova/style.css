@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+boyd {
+  height: 100%;
+}
+
+:root {
+  --primary-color: #14bdac;
+  --bg-color-primary: #14bdac;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Fira Code', monospace;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: var(--primary-color);
+}
+
+#form-tarefas {
+  display: grid;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+#btn {
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  background-color: var(--bg-color-primary);
+}
+
+
+h2 {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+ul {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  font-style: none;
+}
