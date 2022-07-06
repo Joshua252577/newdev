@@ -1,0 +1,15 @@
+{
+  "name": "receitas-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "receitas.js",
+  "scripts": {
+    "dev": "npx nodemon receitas.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
