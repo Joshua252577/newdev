@@ -7,13 +7,12 @@ const server = http.createServer((request, response) => {
   const url = request.url;
 
   let file = url === '/' ? 'index.html' : request.url;
-  console.log('')
+
   if (url === '/cadastro') {
-      file = 'registry.html'
-}
+    file = 'registry.html'
+  }
 
   const filePath = path.join(__dirname, 'public', file);
-
 
   fs.readFile(
     filePath,
@@ -22,10 +21,10 @@ const server = http.createServer((request, response) => {
 
       return response.end(content);
     }
-    )
+  )
     
 });
 
 server.listen(3002, () => {
-  console.log('Server is listening on http://localhost:3002');
+  console.log('Server WEB is listening on http://localhost:3003');
 });

@@ -53,7 +53,7 @@ const getUsers = (request, response) => {
 const server = http.createServer(getUsers);
 
 server.listen(3001, () => {
-  console.log('API listening on http://localhost:3001');
+  console.log('API listening on http://localhost:3002');
 });
 
 

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/6ccf7464d5.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Pagina de Cadastros</title>
+  </head>
+  <body>
+    <header>
+      <h1>Cadastre seu Veículo</h1>
+    </header>
+    <main>
+      <img
+        src="assets/velar_2022-curso.webp"
+        alt="Imagem carro Land Rover Velar-2022"
+      />
+      <form>
+        <label for="marca">Marca</label>
+        <input id="marca" type="text" />
+
+        <label for="modelo">Modelo</label>
+        <input id="modelo" type="text" />
+
+        <label for="ano">Ano</label>
+        <input id="ano" type="number" />
+
+        <button id="btn">Enviar</button>
+
+        <a class="home" href="index.html">Home</a>
+      </form>
+
+      <section id="list-section"></section>
+    </main>
+
+    <script src="cadastro.js"></script>
+  </body>
+</html>
