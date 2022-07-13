@@ -1,17 +1,17 @@
-const express = require ('express');
-const cors = require ('cors');
 
-const routes = require ('./routes');
+const express = require('express');
+const cors = require('cors');
 
+const routes = require('./routes');
 
 const app = express();
 
-const PORT= 3005;
+const PORT = 3005;
 
 app.use(cors());
 app.use(express.json());
 app.use(routes);
 
-app. listen(PORT, () => {
-    console.log(`API  is listening on port ${PORT}`);
-})
+app.listen(PORT, () => {
+  console.log(`API is listening on port ${PORT} `)
+});
