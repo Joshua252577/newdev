@@ -3,8 +3,16 @@ const logger = require('../utils/logger');
 
 exports.findAll = async (request, response) => {
   try {
-    const sql = await database.select('*').from('authors');
-
+    const sql = await database.select('*').from('authors')
+    .select(
+        ['books.id', 'books.title', 'authors.nam as author Name']
+    )
+    .from('books')
+    .innerJoin('authors', 'authors.id', 'books.authorId')
+    
+    sql.forEach(author => {
+        console.log('=>', author['author Name'])
+    })
     return response.status(200)
       .send({
         authors: sql

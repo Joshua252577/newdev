@@ -6,7 +6,7 @@ const fs= require('fs');
 const emitter = new EventsEmitter();
 
 emitter.on('log', (message) => {
-   fs fs.appendFile(path.join(__dirname, 'error.log'), message, (err) => {
+    fs.appendFile(path.join(__dirname, 'error.log'), message, (err) => {
       if(err) { throw error; }
     }
    )

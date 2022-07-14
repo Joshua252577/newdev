@@ -23,6 +23,5 @@ routes.post('/books', BookController.create);
 routes.get('/books/:id', BookController.getById);
 routes.delete('/books/:id', BookController.deleteById);
 routes.put('/books/:id', BookController.put);
-routes.patch('/books/:id', BookController.patch);
 
 module.exports = routes;

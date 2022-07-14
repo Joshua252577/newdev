@@ -6,7 +6,7 @@ const routes = require('./routes');
 
 const app = express();
 
-const PORT = 3005;
+const PORT = 30;
 
 app.use(cors());
 app.use(express.json());
