@@ -6,9 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  fullName: string = 'Matheus'
-  linkGoogle: string = 'http://google.com'
-  linkYoutube: string = 'http://youtube.com'
-  bio: string = ' lorem ipsum dolor sit amet, consectetur adipiscing'
-  subtitle: string = 'subtitle'
+  fullName: string[] = ['Bruno', 'Julia'];
+  bio: string = 'lorem ipsum dolor sit amet, consectetur adipiscing el'
+  link1: string = 'https://google.com';
+  link2: string = 'https://youtube.com'
+  subtitle: string = 'Subtitulo'
+  list: string[] = ['aaa','bbb'];
+
+  char: string = 'Caju'
 }

@@ -1,0 +1,8 @@
+<ul>
+  <li *ngFor="let item of listParam; let indefOfElement=index;" >
+    {{item}}
+    <button (click)="removeParam(indefOfElement)" class="btn btn-outline-danger">
+      Remove
+    </button>
+  </li>
+</ul>
