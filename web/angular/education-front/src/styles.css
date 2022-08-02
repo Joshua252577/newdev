@@ -1,1 +1,63 @@
 /* You can add global styles to this file, and also import other style files */
+/* Default theme. ~960B */
+@import '~@vime/core/themes/default.css';
+
+/* Optional light theme (extends default). ~400B */
+@import '~@vime/core/themes/light.css';
+
+html, body {
+  height: 100%
+}
+
+body {
+  background-color: #09090A !important;
+  color: #E1E1E6 !important;
+}
+
+a {
+  color: inherit !important;
+  text-decoration: inherit !important;
+}
+
+-webkit-font-smoothing: antialiased;
+
+.uppercase {
+  text-transform: uppercase
+}
+
+.font-bold {
+  font-weight: bold !important;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.leading-relaxed {
+  line-height: 1.625;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+/* Scroll bar stylings */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

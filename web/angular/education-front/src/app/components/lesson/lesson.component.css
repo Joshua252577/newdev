@@ -1,0 +1,23 @@
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.date-format {
+  color: #8d8d99;
+}
+
+.card-lesson {
+  border: 1px solid #323239;
+}
+
+.span-type {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+  color: #C4C4CC;
+  font-weight: bold;
+  border: 1px solid #00b37e;
+}
+
+strong {
+  color: #C4C4CC;
+}

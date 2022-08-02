@@ -1,0 +1,20 @@
+.container-video {
+  max-width: 1100px !important;
+  max-height: 60vh !important;
+}
+
+
+.bg-green {
+  background-color: #00875F;
+}
+
+
+.btn-challenge {
+  border: 1px solid #81D8F7;
+  color: #81D8F7;
+}
+
+.btn-challenge:hover {
+  background-color: #81D8F7 !important;
+  color: #282828 !important;
+}

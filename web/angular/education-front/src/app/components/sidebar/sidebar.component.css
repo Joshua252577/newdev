@@ -1,0 +1,12 @@
+aside {
+  width: 348px;
+  max-height: 91vh;
+  border-left: 1px solid #29292e;
+  background-color: #121214;
+  overflow: auto;
+}
+
+span {
+  border-bottom: 1px solid #29292e;
+  font-weight: bold
+}
